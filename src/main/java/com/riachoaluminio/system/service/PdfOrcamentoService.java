@@ -33,7 +33,7 @@ public class PdfOrcamentoService {
         document.open();
 
         try {
-            Image logo = Image.getInstance("src/main/resources/static/logo.png");
+            Image logo = Image.getInstance(PdfOrcamentoService.class.getResource("/static/logo.png"));
             float desiredWidth = 250f;
             float proportion = logo.getWidth() / logo.getHeight();
             float desiredHeight = desiredWidth / proportion;
